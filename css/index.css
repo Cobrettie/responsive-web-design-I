@@ -267,6 +267,75 @@ footer {
     }
 }
 
+/* 500px max width */
+
+@media (max-width: 500px) {
+
+    nav {
+        flex-direction: column-reverse;
+    }
+
+    nav a {
+        width: 100%;
+        border-bottom: 1px solid black;
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    img.logo {
+        margin: 0 auto;
+    }
+
+    header {
+        margin: 0;
+        padding: 30px 0 50px;
+    }
+
+    .header-img {
+        display: none;
+    }
+
+    .top-content-contain {
+        flex-direction: column;
+    }
+
+    .top-content-features {
+        width: 100%;
+        padding: 0 0 30px;
+    }
+
+    .top-content-about {
+        width: 100%;
+    }
+
+    .top-content-img {
+        padding: 30px 0;
+    }
+
+    .bottom-content-contain {
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+
+    .bottom-content-services {
+        width: 100%;
+        padding: 0 0 30px 0;
+    }
+
+    .bottom-content-product {
+        width: 100%;
+        padding: 0 0 30px 0;
+    }
+
+    .bottom-content-vision {
+        width: 100%;
+    }
+
+    footer {
+        padding: 30px 0;
+    }
+}
+
 /* Mobile */
 
 /* @media screen and (max-width: 600px) {
