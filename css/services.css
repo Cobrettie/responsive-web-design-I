@@ -66,7 +66,7 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 body {
-	margin: 0 40px 10px;
+	margin: 0 20px 10px;
 }
 
 p {
@@ -196,9 +196,72 @@ footer {
 
 /* Media Queries */
 
+/* 500px Breakpoint */
+
+@media (max-width: 500px) {
+     nav {
+        flex-direction: column-reverse;
+    }
+
+    nav a {
+        width: 100%;
+        border-bottom: 1px solid black;
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    img.logo {
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .main-cards-section {
+        flex-direction: column;
+    }
+
+    .content-card {
+        width: 100%;
+    }
+
+    .bottom-content-section {
+        flex-direction: column;
+    }
+
+    .bottom-content-text {
+        width: 100%;
+    }
+
+    .services-info-img {
+        width: 100%;
+        padding: 20px 0 0;
+    }
+
+    footer {
+        padding: 20px 0 30px;
+    }
+}
+
+/* Tablet/800px breakpoint */
+
+@media (min-width: 501px) and (max-width: 800px) {
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 100px 1rem 1rem;
+    }
+
+    img.logo{
+        position: absolute;
+        top: 2rem;
+        left: 40%;
+        padding: 0;
+    }
+}
+
 /* Mobile Phone */
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
 
 	nav {
 		flex-direction: column-reverse;
@@ -245,11 +308,11 @@ footer {
 	footer {
 		padding: 30px 50px;
 	}
-}
+} */
 
 /* smaller screens, mobile, tablet */
 
-@media screen and (min-width: 601px) and (max-width: 999px) {
+/* @media screen and (min-width: 601px) and (max-width: 999px) {
 	nav {
 		flex-direction: column-reverse;
 	}
@@ -273,4 +336,4 @@ footer {
 		margin-left: 0;
 		padding: 0 0 10px 0;
 	}
-}
+} */
